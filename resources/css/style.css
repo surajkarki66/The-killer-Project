@@ -1,3 +1,6 @@
+/* ----------------------------------------------------- */
+/* -------- Basic Setup --------*/
+/* -----------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +17,159 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Reusable components --------*/
+/* -----------------------------------------------------*/
+
 .row {
         max-width: 1140px;
         margin: 0 auto;
 }
+
+
+
+/* --------------Headings ------------*/
+
+h1 {
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Buttons --------*/
+/* -----------------------------------------------------*/
+
+.btn:link,    /* link and visted are two states after clicking any button */
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;          
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color:  #e67e22;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+
+    
+}  
+
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e67e22;
+
+    
+}  
+
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #fff;
+
+    
+}  
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Header  --------*/
+/* -----------------------------------------------------*/
+
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+}
+
+.hero-text-box {
+    position:absolute;
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;     /* goes to left side*/
+    margin-top: 20px;
+
+
+}
+
+.main-nav {
+    float: right;   /*goes to right side */
+    list-style: none;  /* get rid of bullet points */
+    margin-top: 55px;
+
+}
+
+.main-nav li {
+    display: inline-block;   /* make the link side by side */
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;  /* not visible until hover */
+    transition: border-bottom 0.2s; 
+
+    
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid  #e67e22;
+
+}
+
+
