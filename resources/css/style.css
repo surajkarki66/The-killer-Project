@@ -131,6 +131,10 @@ header {
 
 }
 
+.hero-text-box h1 {
+    margin-bottom: 6%;
+}
+
 .logo {
     height: 100px;
     width: auto;
