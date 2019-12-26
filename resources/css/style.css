@@ -112,6 +112,17 @@ h2:after {        /* after pseudo class */
 
 
 /* ----------------------------------------------------- */
+/* -------- Features--------*/
+/* -----------------------------------------------------*/
+
+
+.section-features .long-copy  {
+    margin-bottom: 30px;
+}
+
+
+
+/* ----------------------------------------------------- */
 /* -------- Icons--------*/
 /* -----------------------------------------------------*/
 
@@ -257,5 +268,47 @@ header {
     border-bottom: 2px solid  #e67e22;
 
 }
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Meals  --------*/
+/* -----------------------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width:100%;
+    margin: 0;
+    overflow: hidden;  /* image will not overlaped the figure container */  
+    background-color: black;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);   /* image will be 115% */
+    transition: transform 0.5s, opacity 0.5s;  /* it will delay the transform by 0.5 s */
+    opacity: 0.7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
 
 
