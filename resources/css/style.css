@@ -143,6 +143,41 @@ h2:after {        /* after pseudo class */
 
 }
 
+.icon-small {
+    display: inline-block; /* to align them */
+    width:30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+
+/* ----------------------------------------------------- */
+/* -------- Links--------*/
+/* -----------------------------------------------------*/
+/* to format links */
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px transparent;
+}
+
+
+
 
 
 
@@ -220,6 +255,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 
 
 }
@@ -372,9 +408,76 @@ header {
     margin-right: 25px;
 }
 
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
 
+
+
+/* ----------------------------------------------------- */
+/* -------- Cities--------*/
+/* -----------------------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom:15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+
+}
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Testimonials--------*/
+/* -----------------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(img/back-customers.jpg);
+    background-size: cover;   /* it cover the whole area of browser */
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size:500% ;    
+    display: block;
+    position: absolute;  /* when it is absoulute position its parent must be in relative positon */
+    top: -5px;
+    left: -3px;
+    
+}
+
+
+cite {
+    font-weight: 90%;
+    margin-top: 25px;
+    display: block;  /* For line break */
+
+
+}
+
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
