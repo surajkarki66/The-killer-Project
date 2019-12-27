@@ -283,7 +283,7 @@ header {
     margin-bottom: 6%;
 }
 
-.logo {
+.logo{
     height: 100px;
     width: auto;
     float: left;     /* goes to left side*/
@@ -292,15 +292,23 @@ header {
 
 }
 
-.main-nav {
-    float: right;   /*goes to right side */
-    list-style: none;  /* get rid of bullet points */
-    margin-top: 55px;
+.logo-black {
+    display: none;  /* not visible in normal state */
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
 
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
 }
 
 .main-nav li {
-    display: inline-block;   /* make the link side by side */
+    display: inline-block;
     margin-left: 40px;
 }
 
@@ -311,21 +319,41 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
-    border-bottom: 2px solid transparent;  /* not visible until hover */
+    border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s; 
-
-    
+    transition: border-bottom 0.2s;
 }
-
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid  #e67e22;
-
+    border-bottom: 2px solid #e67e22;
 }
 
 
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+            box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /* ----------------------------------------------------- */
 /* -------- Meals  --------*/
@@ -691,4 +719,33 @@ footer p {
     color: #888;
     text-align: center; 
     margin-top:20px;
+}
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* -------- Animations --------*/
+/* -----------------------------------------------------*/
+
+
+.js--wp-1,
+.js--wp-2,  /* for fade in */
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated ,
+.js--wp-3.animated{
+    opacity: 1;
+
 }
