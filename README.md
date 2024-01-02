@@ -2,4 +2,8 @@
 This is a killer project built in HTML, CSS, and Javascript.
 
 ## To run
-Open `index.html` in your web browser.
+1. Clone this repository
+   ```bash
+     git clone https://github.com/surajkarki66/The-killer-Project/
+   ```
+2. Open `index.html` in your web browser.
